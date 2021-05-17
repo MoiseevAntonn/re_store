@@ -67,9 +67,9 @@ const mapServiceToProps = (service) => {
 
 const mapStateToProps = (state) => {
     return {
-        books: state.books,
-        loading: state.loading,
-        error: state.error
+        books: state.bookList.books,
+        loading: state.bookList.loading,
+        error: state.bookList.error
     }
 };
 
